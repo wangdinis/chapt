@@ -2399,7 +2399,7 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
     <div class="contacto-line reveal">
       <div class="icon">✉</div>
       <div>
-        <div><strong><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="eb9c8a858c8f82858298ab8c868a8287c5888486">[email&#160;protected]</a></strong></div>
+        <div><a id="emailLink" href="#" style="color:var(--white); font-weight:600; font-size:15px; text-decoration:none; border-bottom:1px solid rgba(196,153,58,0.35);">contactar por email</a></div>
         <div data-i18n="ct_email_sub">Resposta em menos de 24h</div>
       </div>
     </div>
@@ -2514,7 +2514,7 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
 </footer>
 
 <!-- ─── SCRIPTS ──────────────────────────────────────────────── -->
-<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+<script>
 /* ── Lock scroll during loading ──────────────────────────────── */
 document.body.classList.add('loading');
 
@@ -3654,6 +3654,15 @@ setLang = function(lang) {
         onUpdate:function(self){ draw(self.progress); }
       });
     }
+  })();
+
+  /* ───────── 7 · EMAIL built at runtime (beats spam-bots / obfuscators) ───────── */
+  (function(){
+    var a = document.getElementById('emailLink');
+    if(!a) return;
+    var user = 'wangdinis', dom = 'gmail.com';
+    a.setAttribute('href', 'mailto:' + user + '@' + dom);
+    a.textContent = user + '@' + dom;
   })();
 
   /* settle layout after pins / transforms register */
