@@ -2519,11 +2519,9 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
 document.body.classList.add('loading');
 
 /* ── Lenis smooth scroll ─────────────────────────────────────── */
-const lenis = new Lenis({ lerp: 0.08, smoothWheel: true });
-function raf(t) { lenis.raf(t); requestAnimationFrame(raf); }
-requestAnimationFrame(raf);
+const lenis = new Lenis({ lerp: 0.1, smoothWheel: true });
 
-/* ── Scroll → GSAP sync ──────────────────────────────────────── */
+/* ── Scroll → GSAP sync (single drive via gsap.ticker) ───────── */
 lenis.on('scroll', ScrollTrigger.update);
 gsap.ticker.add((t) => lenis.raf(t * 1000));
 gsap.ticker.lagSmoothing(0);
