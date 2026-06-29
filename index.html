@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>CHAPT — Intérprete Industrial Chinês-Português | Dinis Wang Lin</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'><rect width='64' height='64' rx='13' fill='%2309090B'/><text x='32' y='47' font-family='serif' font-size='44' font-weight='700' text-anchor='middle' fill='%23A87E33'>信</text></svg>">
 
 <!-- SEO -->
 <meta name="description" content="Intérprete industrial chinês-português de referência em Portugal. Especializado em fábricas, negociações técnicas e relações sino-portuguesas. Disponível em todo o território nacional.">
@@ -15,14 +16,15 @@
 <!-- Open Graph (LinkedIn, Facebook, WhatsApp previews) -->
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://wangdinis.github.io/chapt">
-<meta property="og:title" content="CHAPT — Intérprete Industrial Chinês↔Português">
+<meta property="og:title" content="CHAPT — Intérprete Industrial Chinês↔︎Português">
 <meta property="og:description" content="O intérprete industrial de referência entre China e Portugal. Nativo em mandarim e português europeu. Especializado em fábricas, negociações e suporte técnico.">
-<meta property="og:image" content="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='630'%3E%3Crect width='1200' height='630' fill='%2307080A'/%3E%3Ctext x='600' y='270' text-anchor='middle' font-family='serif' font-size='120' font-weight='700' fill='%23F0EBE1' letter-spacing='20'%3ECHAPT%3C/text%3E%3Ctext x='600' y='340' text-anchor='middle' font-family='sans-serif' font-size='28' fill='%23C4993A' letter-spacing='8'%3E%E4%B8%AD%E6%96%87 %E2%86%94 PORTUGU%C3%8AS%3C/text%3E%3Ctext x='600' y='400' text-anchor='middle' font-family='sans-serif' font-size='20' fill='%23888070' letter-spacing='4'%3EINT%C3%89RPRETE INDUSTRIAL%3C/text%3E%3C/svg%3E">
+<meta property="og:image" content="https://wangdinis.github.io/chapt/og-image.png">
+<meta name="twitter:image" content="https://wangdinis.github.io/chapt/og-image.png">
 <meta property="og:locale" content="pt_PT">
 
 <!-- Twitter / X Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="CHAPT — Intérprete Industrial Chinês↔Português">
+<meta name="twitter:title" content="CHAPT — Intérprete Industrial Chinês↔︎Português">
 <meta name="twitter:description" content="O intérprete industrial de referência entre China e Portugal. Nativo em mandarim e português europeu.">
 
 <!-- Performance: preload critical font -->
@@ -35,6 +37,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
 
 <!-- GSAP -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
@@ -59,16 +62,16 @@ html { scroll-behavior: auto; }
 
 /* ─── TOKENS ─────────────────────────────────────────────────── */
 :root {
-  --bg:     #07080A;
-  --bg2:    #0E1014;
-  --red:    #C8102E;
-  --red2:   #A50E26;
-  --gold:   #C4993A;
-  --gold2:  #E8C26A;
-  --white:  #F0EBE1;
-  --dim:    #888070;
-  --nav-bg: rgba(7,8,10,0.92);
-  --border: rgba(196,153,58,0.18);
+  --bg:     #09090B;
+  --bg2:    #131216;
+  --red:    #7E1D2B;
+  --red2:   #6A1623;
+  --gold:   #A87E33;
+  --gold2:  #CBA24E;
+  --white:  #F1ECE2;
+  --dim:    #8C8478;
+  --nav-bg: rgba(9,9,11,0.92);
+  --border: rgba(168,126,51,0.18);
   --font-display: 'Noto Serif SC', serif;
   --font-body:    'Inter', sans-serif;
 }
@@ -205,7 +208,7 @@ nav.scrolled {
   font-size: clamp(200px, 28vw, 420px);
   font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(196,153,58,0.06);
+  -webkit-text-stroke: 1px rgba(168,126,51,0.06);
   line-height: 1;
   pointer-events: none;
   user-select: none;
@@ -463,12 +466,12 @@ section { padding: 120px 60px; }
   transition: transform .4s ease;
 }
 .servico-card:hover::before { transform: scaleX(1); }
-.servico-card:hover { background: #111318; }
+.servico-card:hover { background: #17151A; }
 .servico-zh {
   font-family: var(--font-display);
   font-size: 42px; font-weight: 700;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(196,153,58,0.3);
+  -webkit-text-stroke: 1px rgba(168,126,51,0.3);
   margin-bottom: 24px;
   line-height: 1;
   transition: -webkit-text-stroke .3s, color .3s;
@@ -504,7 +507,7 @@ section { padding: 120px 60px; }
 #numeros {
   background: var(--red);
   padding: 80px 60px;
-  border-top: 1px solid rgba(200,16,46,0.3);
+  border-top: 1px solid rgba(126,29,43,0.3);
 }
 .numeros-grid {
   display: grid;
@@ -615,7 +618,7 @@ section { padding: 120px 60px; }
   transition: background .3s;
   cursor: default;
 }
-.sector-item:hover { background: #111318; }
+.sector-item:hover { background: #17151A; }
 .sector-zh {
   font-family: var(--font-display);
   font-size: 36px; font-weight: 700;
@@ -943,7 +946,7 @@ body.loading #scroll-progress { opacity: 0; pointer-events: none; }
 }
 #loader-bar-wrap {
   width: 120px; height: 1px;
-  background: rgba(196,153,58,0.15);
+  background: rgba(168,126,51,0.15);
   overflow: hidden;
   opacity: 0;
 }
@@ -955,18 +958,22 @@ body.loading #scroll-progress { opacity: 0; pointer-events: none; }
 
 /* ─── DARK / LIGHT MODE ──────────────────────────────────────── */
 body.light {
-  --bg:     #F5F1EC;
-  --bg2:    #EDE9E3;
-  --white:  #1A1410;
-  --dim:    #7A6E65;
-  --border: rgba(100,60,10,0.14);
-  --nav-bg: rgba(245,241,236,0.95);
+  --bg:     #F3EEE6;
+  --bg2:    #E9E3D8;
+  --red:    #7E1D2B;
+  --red2:   #6A1623;
+  --gold:   #8A6526;
+  --gold2:  #A87E33;
+  --white:  #1A1510;
+  --dim:    #6E655A;
+  --border: rgba(138,101,38,0.22);
+  --nav-bg: rgba(243,238,230,0.95);
 }
 body.light .hero-ghost {
   -webkit-text-stroke: 1px rgba(100,60,10,0.04);
 }
 body.light .sobre-char-big {
-  -webkit-text-stroke: 1.5px rgba(196,153,58,0.15);
+  -webkit-text-stroke: 1.5px rgba(168,126,51,0.15);
 }
 body.light .cursor-ring { border-color: var(--dim); }
 
@@ -1089,7 +1096,7 @@ body.light .cursor-ring { border-color: var(--dim); }
 }
 .play-btn {
   width: 64px; height: 64px;
-  border: 1.5px solid rgba(196,153,58,0.4);
+  border: 1.5px solid rgba(168,126,51,0.4);
   border-radius: 50%;
   display: flex; align-items: center; justify-content: center;
   color: var(--gold); font-size: 22px;
@@ -1202,7 +1209,7 @@ body.light .cursor-ring { border-color: var(--dim); }
   overflow: hidden;
   transition: background .3s;
 }
-.caso-card:hover { background: #111318; }
+.caso-card:hover { background: #17151A; }
 .caso-card::after {
   content: '';
   position: absolute; bottom: 0; left: 0; right: 0;
@@ -1388,7 +1395,7 @@ body.light .cursor-ring { border-color: var(--dim); }
   align-items: start;
   transition: background .3s;
 }
-.cultura-item:hover { background: #111318; }
+.cultura-item:hover { background: #17151A; }
 .cultura-zh {
   font-family: var(--font-display);
   font-size: 28px; font-weight: 700;
@@ -1473,18 +1480,19 @@ body.light .cursor-ring { border-color: var(--dim); }
   align-items: flex-end;
 }
 .float-btn {
-  display: flex; align-items: center; gap: 10px;
-  padding: 12px 20px;
-  font-size: 12px; font-weight: 500; letter-spacing: 0.1em; text-transform: uppercase;
+  display: flex; align-items: center; justify-content: center;
+  width: 52px; height: 52px; padding: 0;
+  font-size: 0; letter-spacing: 0;
   text-decoration: none;
-  border-radius: 2px;
-  transition: transform .25s, opacity .25s;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+  border-radius: 50%;
+  transition: transform .25s, box-shadow .25s, opacity .25s;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.35);
+  opacity: 0.9;
 }
-.float-btn:hover { transform: translateY(-3px); }
+.float-btn:hover { transform: translateY(-3px); opacity: 1; box-shadow: 0 10px 26px rgba(0,0,0,0.45); }
 .float-wa { background: #25D366; color: #fff; }
 .float-wc { background: #07C160; color: #fff; }
-.float-btn svg { width: 18px; height: 18px; fill: #fff; flex-shrink: 0; }
+.float-btn svg { width: 24px; height: 24px; fill: #fff; flex-shrink: 0; }
 .float-wechat-qr {
   background: var(--bg2);
   border: 1px solid var(--border);
@@ -1518,7 +1526,7 @@ body.light::before { opacity: 0.022; }
   top: 15%; right: -5%;
   width: 55vw; height: 55vw;
   max-width: 700px; max-height: 700px;
-  background: radial-gradient(circle at center, rgba(200,16,46,0.07) 0%, transparent 68%);
+  background: radial-gradient(circle at center, rgba(126,29,43,0.07) 0%, transparent 68%);
   pointer-events: none;
   border-radius: 50%;
   animation: glowPulse 7s ease-in-out infinite;
@@ -1551,7 +1559,7 @@ body.light::before { opacity: 0.022; }
 }
 .sc-line {
   width: 1px; height: 36px;
-  background: linear-gradient(to bottom, var(--gold), rgba(196,153,58,0.1));
+  background: linear-gradient(to bottom, var(--gold), rgba(168,126,51,0.1));
 }
 #sc-total {
   font-size: 10px; letter-spacing: 0.1em;
@@ -1605,6 +1613,7 @@ section, #mapa, #casos, .logos-section {
   .hamburger { display: flex; }
   .nav-links { display: none; }
   .nav-right .nav-cta { display: none; }
+  .nav-right .nav-linkedin { display: none; }
   .nav-right .mode-toggle { display: none; }
   .nav-right .lang-toggle { display: none; }
   .pricing-grid { grid-template-columns: 1fr; }
@@ -1728,8 +1737,8 @@ section, #mapa, #casos, .logos-section {
   transform: translateX(-50%) perspective(620px) rotateX(74deg);
   transform-origin:50% 100%;
   background-image:
-    linear-gradient(to right, rgba(196,153,58,0.11) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(196,153,58,0.11) 1px, transparent 1px);
+    linear-gradient(to right, rgba(168,126,51,0.11) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(168,126,51,0.11) 1px, transparent 1px);
   background-size:64px 64px;
   -webkit-mask-image: radial-gradient(ellipse 55% 92% at 50% 100%, #000 0%, transparent 72%);
           mask-image: radial-gradient(ellipse 55% 92% at 50% 100%, #000 0%, transparent 72%);
@@ -1748,7 +1757,7 @@ body.light .depth-grid{
   font-family:var(--font-display); font-weight:700; line-height:1;
   font-size:clamp(360px, 50vw, 760px);
   color:transparent;
-  -webkit-text-stroke:1.5px rgba(196,153,58,0.085);
+  -webkit-text-stroke:1.5px rgba(168,126,51,0.085);
   white-space:nowrap; user-select:none; pointer-events:none;
   z-index:-1;
 }
@@ -1760,7 +1769,7 @@ body.light .giant-char{ -webkit-text-stroke:1.5px rgba(100,60,10,0.06); }
   position:absolute; inset:0; z-index:4; pointer-events:none;
   opacity:0; transition:opacity .35s ease;
   background:radial-gradient(440px circle at var(--gx,50%) var(--gy,50%),
-            rgba(232,194,106,0.18), rgba(232,194,106,0.04) 40%, transparent 62%);
+            rgba(203,162,78,0.18), rgba(203,162,78,0.04) 40%, transparent 62%);
   mix-blend-mode:screen;
 }
 .tilt-3d:hover .card-glare{ opacity:1; }
@@ -1781,12 +1790,12 @@ body.light .giant-char{ -webkit-text-stroke:1.5px rgba(100,60,10,0.06); }
 }
 
 /* Media frame — intentional empty state, ready for real media */
-.media-frame{ background:linear-gradient(150deg,#0d0f13,#0a0b0e); }
+.media-frame{ background:linear-gradient(150deg,#121116,#0b0b0e); }
 body.light .media-frame{ background:linear-gradient(150deg,#ece8e1,#f3efe9); }
 .media-portrait-char{
   position:absolute; inset:0; display:flex; align-items:center; justify-content:center;
   font-family:var(--font-display); font-weight:700; font-size:clamp(120px,16vw,210px);
-  color:transparent; -webkit-text-stroke:1.5px rgba(196,153,58,0.16);
+  color:transparent; -webkit-text-stroke:1.5px rgba(168,126,51,0.16);
   pointer-events:none; user-select:none;
 }
 .media-frame img, .media-frame video{
@@ -1797,18 +1806,73 @@ body.light .media-frame{ background:linear-gradient(150deg,#ece8e1,#f3efe9); }
   display:inline-flex; align-items:center; gap:9px;
   padding:8px 16px; border:1px solid var(--border);
   font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:var(--gold);
-  background:rgba(7,8,10,0.45); backdrop-filter:blur(4px);
+  background:rgba(9,9,11,0.45); backdrop-filter:blur(4px);
 }
 body.light .media-cap{ background:rgba(245,241,236,0.55); }
 .media-cap .dotpulse{ width:6px; height:6px; border-radius:50%; background:var(--gold);
-  box-shadow:0 0 0 0 rgba(196,153,58,0.5); animation:pulse-gold 2.2s ease-in-out infinite; }
-@keyframes pulse-gold{ 0%,100%{ box-shadow:0 0 0 0 rgba(196,153,58,0.5);} 50%{ box-shadow:0 0 0 6px rgba(196,153,58,0);} }
+  box-shadow:0 0 0 0 rgba(168,126,51,0.5); animation:pulse-gold 2.2s ease-in-out infinite; }
+@keyframes pulse-gold{ 0%,100%{ box-shadow:0 0 0 0 rgba(168,126,51,0.5);} 50%{ box-shadow:0 0 0 6px rgba(168,126,51,0);} }
 
 /* Form focus polish */
 .form-row input:focus, .form-row textarea:focus, .form-row select:focus{
-  box-shadow:0 0 0 3px rgba(196,153,58,0.12);
+  box-shadow:0 0 0 3px rgba(168,126,51,0.12);
 }
 .form-row:focus-within label{ color:var(--gold); }
+
+/* ── Personal seal (印章) ── */
+.seal{
+  display:inline-grid; grid-template-columns:repeat(2,1fr); grid-template-rows:repeat(2,1fr);
+  gap:2px; width:80px; height:80px; padding:8px;
+  background:#B23A2C; border-radius:9px;
+  box-shadow: inset 0 0 0 2px rgba(244,236,224,0.32), 0 10px 26px rgba(0,0,0,0.45);
+  transform:rotate(-4deg);
+}
+.seal span{
+  display:flex; align-items:center; justify-content:center;
+  font-family:var(--font-display); font-weight:700; font-size:27px; line-height:1;
+  color:#F4ECE0;
+}
+body.light .seal{ box-shadow: inset 0 0 0 2px rgba(255,248,240,0.55), 0 10px 26px rgba(0,0,0,0.18); }
+
+/* ── Handwritten signature ── */
+.signature{ font-family:'Sacramento', cursive; font-size:clamp(40px,5vw,60px); color:var(--gold2); line-height:1; }
+
+/* ── Manifesto (first person) ── */
+#manifesto{
+  background:var(--bg); border-top:1px solid var(--border);
+  padding:130px 60px; text-align:center; position:relative; overflow:hidden;
+}
+.manifesto-inner{ max-width:840px; margin:0 auto; position:relative; z-index:1; }
+.manifesto-label{
+  font-size:10px; letter-spacing:0.3em; text-transform:uppercase; color:var(--red);
+  margin-bottom:36px; display:inline-flex; align-items:center; gap:14px;
+}
+.manifesto-label::before, .manifesto-label::after{ content:''; width:34px; height:1px; background:var(--red); }
+.manifesto-text{
+  font-family:var(--font-display); font-weight:300;
+  font-size:clamp(24px,3.1vw,40px); line-height:1.5; color:var(--white); letter-spacing:0.01em;
+}
+.manifesto-text em{ color:var(--gold); font-style:normal; }
+.manifesto-sign{ margin-top:54px; display:flex; flex-direction:column; align-items:center; gap:16px; }
+.manifesto-name-zh{ font-family:var(--font-display); font-size:13px; letter-spacing:0.34em; color:var(--dim); }
+
+/* ── Footer link / nav LinkedIn ── */
+.footer-right{ display:flex; align-items:center; gap:24px; }
+.footer-link{ font-size:11px; letter-spacing:0.14em; text-transform:uppercase; color:var(--gold); text-decoration:none; transition:color .25s; }
+.footer-link:hover{ color:var(--white); }
+.nav-linkedin{
+  width:34px; height:34px; display:flex; align-items:center; justify-content:center;
+  border:1px solid var(--border); color:var(--dim);
+  transition:border-color .25s, color .25s; flex-shrink:0;
+}
+.nav-linkedin:hover{ border-color:var(--gold); color:var(--gold); }
+.nav-linkedin svg{ width:15px; height:15px; fill:currentColor; }
+
+@media(max-width:900px){
+  #manifesto{ padding:84px 24px; }
+  .manifesto-text{ font-size:22px; }
+  .footer-right{ flex-direction:column; gap:16px; }
+}
 
 </style>
 </head>
@@ -1827,7 +1891,7 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
 <!-- LOADING SCREEN -->
 <div id="loader">
   <div id="loader-logo">CH<span>A</span>PT</div>
-  <div id="loader-tag">中文 ↔ Português</div>
+  <div id="loader-tag">中文 ↔︎ Português</div>
   <div id="loader-bar-wrap"><div id="loader-bar"></div></div>
 </div>
 
@@ -1839,6 +1903,7 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
 <nav id="nav">
   <a href="#" class="nav-logo">CH<span>A</span>PT</a>
   <div class="nav-links" role="navigation" aria-label="Navegação principal">
+    <a href="#sobre" class="nav-link" data-i18n="nl_sobre">Sobre</a>
     <a href="#servicos" class="nav-link" data-i18n="nl_serv">Serviços</a>
     <a href="#pricing"  class="nav-link" data-i18n="nl_price">Preços</a>
     <a href="#cultura"  class="nav-link" data-i18n="nl_cult">Cultura</a>
@@ -1852,6 +1917,9 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
       <button id="btnZH" onclick="setLang('zh')">中文</button>
     </div>
     <button class="mode-toggle" id="modeToggle" onclick="toggleMode()" title="Alternar modo claro/escuro">☾</button>
+    <a class="nav-linkedin" href="https://www.linkedin.com/in/dinis-wang-lin-503b8833b/" target="_blank" rel="noopener" aria-label="LinkedIn" title="LinkedIn">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.35V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 110-4.13 2.06 2.06 0 010 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.72v20.56C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+    </a>
     <a href="#contacto" class="nav-cta" data-i18n="nav_cta">Solicitar Orçamento</a>
     <button class="hamburger" id="hamburger" onclick="openMobileMenu()" aria-label="Abrir menu">
       <span></span><span></span><span></span>
@@ -1862,6 +1930,7 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
 <!-- MOBILE MENU OVERLAY -->
 <div id="mobileMenu" role="dialog" aria-modal="true" aria-label="Menu de navegação">
   <button class="mob-close" onclick="closeMobileMenu()" aria-label="Fechar menu">✕</button>
+  <a href="#sobre"  class="mob-nav-link" onclick="closeMobileMenu()" data-i18n="nl_sobre">Sobre</a>
   <a href="#servicos"  class="mob-nav-link" onclick="closeMobileMenu()" data-i18n="nl_serv">Serviços</a>
   <a href="#pricing"   class="mob-nav-link" onclick="closeMobileMenu()" data-i18n="nl_price">Preços</a>
   <a href="#cultura"   class="mob-nav-link" onclick="closeMobileMenu()" data-i18n="nl_cult">Cultura</a>
@@ -2012,6 +2081,21 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
     <div>
       <div class="sobre-char-big">信</div>
       <div class="sobre-char-label" data-i18n="char_label">Confiança · 信任</div>
+    </div>
+  </div>
+</section>
+
+<!-- MANIFESTO -->
+<section id="manifesto">
+  <div class="manifesto-inner">
+    <p class="manifesto-label" data-i18n="manif_label">Em primeira pessoa</p>
+    <blockquote class="manifesto-text" data-i18n="manif_text">
+      Nasci em Portugal, em 2006, no meio de duas línguas. Aprendi <em>mandarim</em> e <em>português</em> ao mesmo tempo — um em casa, o outro na rua — e estudei numa escola chinesa em Vila do Conde. Nunca tive de escolher entre os dois mundos: pertenço aos dois. É essa fluência de raiz que levo para cada sala onde Portugal e a China se tentam entender.
+    </blockquote>
+    <div class="manifesto-sign reveal">
+      <div class="seal" aria-label="Selo pessoal de Dinis Wang Lin — 王榆檑"><span>檑</span><span>王</span><span>印</span><span>榆</span></div>
+      <span class="signature">Dinis Wang Lin</span>
+      <span class="manifesto-name-zh">王榆檑</span>
     </div>
   </div>
 </section>
@@ -2188,35 +2272,35 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
 
 <!-- MAP -->
 <div id="mapa">
-  <p class="mapa-label" data-i18n="mapa_label">Portugal ↔ China · A ponte que falta ao mercado</p>
+  <p class="mapa-label" data-i18n="mapa_label">Portugal ↔︎ China · A ponte que falta ao mercado</p>
   <div class="mapa-svg-wrap">
     <svg viewBox="0 0 900 220" xmlns="http://www.w3.org/2000/svg" id="mapaSvg">
       <defs>
         <linearGradient id="mapGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-          <stop offset="0%" stop-color="#C8102E"/>
-          <stop offset="50%" stop-color="#C4993A"/>
-          <stop offset="100%" stop-color="#C8102E"/>
+          <stop offset="0%" stop-color="#7E1D2B"/>
+          <stop offset="50%" stop-color="#A87E33"/>
+          <stop offset="100%" stop-color="#7E1D2B"/>
         </linearGradient>
       </defs>
       <!-- curved arc -->
       <path class="map-path" id="mapPath" d="M 90,160 C 250,20 650,20 810,160"/>
       <!-- Portugal dot -->
-      <circle cx="90" cy="160" r="6" fill="#C8102E" class="map-dot-pulse"/>
-      <circle cx="90" cy="160" r="14" fill="rgba(200,16,46,0.12)" id="ptGlow"/>
+      <circle cx="90" cy="160" r="6" fill="#7E1D2B" class="map-dot-pulse"/>
+      <circle cx="90" cy="160" r="14" fill="rgba(126,29,43,0.12)" id="ptGlow"/>
       <text x="90" y="192" text-anchor="middle" class="map-dot-label">PT</text>
       <text x="90" y="208" text-anchor="middle" class="map-city">Vale de Cambra</text>
       <!-- China dot -->
-      <circle cx="810" cy="160" r="6" fill="#C4993A" class="map-dot-pulse" style="animation-delay:.8s"/>
-      <circle cx="810" cy="160" r="14" fill="rgba(196,153,58,0.12)" id="cnGlow"/>
+      <circle cx="810" cy="160" r="6" fill="#A87E33" class="map-dot-pulse" style="animation-delay:.8s"/>
+      <circle cx="810" cy="160" r="14" fill="rgba(168,126,51,0.12)" id="cnGlow"/>
       <text x="810" y="192" text-anchor="middle" class="map-dot-label">中国</text>
       <text x="810" y="208" text-anchor="middle" class="map-city">China</text>
       <!-- midpoint glow -->
       <circle cx="450" cy="70" r="4" fill="var(--gold)" opacity="0" id="mapMidDot"/>
       <!-- traveling bridge token -->
       <g id="mapTraveler" opacity="0">
-        <circle r="22" fill="rgba(196,153,58,0.14)"/>
-        <circle r="7" fill="#C4993A"/>
-        <text id="mapTravChar" text-anchor="middle" y="-26" font-family="'Noto Serif SC',serif" font-size="24" font-weight="700" fill="#F0EBE1">譯</text>
+        <circle r="22" fill="rgba(168,126,51,0.14)"/>
+        <circle r="7" fill="#A87E33"/>
+        <text id="mapTravChar" text-anchor="middle" y="-26" font-family="'Noto Serif SC',serif" font-size="24" font-weight="700" fill="#F1ECE2">譯</text>
       </g>
     </svg>
   </div>
@@ -2399,7 +2483,7 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
     <div class="contacto-line reveal">
       <div class="icon">✉</div>
       <div>
-        <div><a id="emailLink" href="#" style="color:var(--white); font-weight:600; font-size:15px; text-decoration:none; border-bottom:1px solid rgba(196,153,58,0.35);">contactar por email</a></div>
+        <div><a id="emailLink" href="#" style="color:var(--white); font-weight:600; font-size:15px; text-decoration:none; border-bottom:1px solid rgba(168,126,51,0.35);">contactar por email</a></div>
         <div data-i18n="ct_email_sub">Resposta em menos de 24h</div>
       </div>
     </div>
@@ -2510,7 +2594,10 @@ body.light .media-cap{ background:rgba(245,241,236,0.55); }
 <footer>
   <div class="footer-logo">CH<span>A</span>PT</div>
   <div class="footer-copy" data-i18n="footer_copy">© 2026 CHAPT · Dinis Wang Lin · Vale de Cambra, Portugal</div>
-  <div class="footer-langs"><span>中文</span> ↔ Português</div>
+  <div class="footer-right">
+    <a class="footer-link" href="https://www.linkedin.com/in/dinis-wang-lin-503b8833b/" target="_blank" rel="noopener">LinkedIn ↗</a>
+    <div class="footer-langs"><span>中文</span> ↔︎ Português</div>
+  </div>
 </footer>
 
 <!-- ─── SCRIPTS ──────────────────────────────────────────────── -->
@@ -2794,6 +2881,8 @@ const translations = {
     p3_name: 'Relatório',  p3_desc: 'Sumário dos pontos acordados, terminologia usada e recomendações para próximas interacções com a parte chinesa.',
     p4_name: 'Follow-up',  p4_desc: 'Disponibilidade para esclarecimento de dúvidas pós-missão e suporte contínuo à relação sino-portuguesa.',
     char_label: 'Confiança · 信任',
+    manif_label: 'Em primeira pessoa',
+    manif_text: 'Nasci em Portugal, em 2006, no meio de duas línguas. Aprendi <em>mandarim</em> e <em>português</em> ao mesmo tempo — um em casa, o outro na rua — e estudei numa escola chinesa em Vila do Conde. Nunca tive de escolher entre os dois mundos: pertenço aos dois. É essa fluência de raiz que levo para cada sala onde Portugal e a China se tentam entender.',
     sec_label:  'Especialização',
     sec_title:  'Áreas de <em>especialização</em>',
     sec1_name: 'Indústria Automóvel',  sec1_sub: 'OEM, fornecedores tier-1, componentes, inspecção de qualidade',
@@ -2872,11 +2961,11 @@ const translations = {
     video_label: 'Apresentação em Vídeo', video_title: 'Ouve-me falar<br>nas <em>duas línguas</em>',
     video_placeholder: 'Vídeo de apresentação · em breve',
     video_tip: 'Um vídeo de apresentação é o único elemento que nenhum concorrente tem. <strong>30 segundos a falar em português e mandarim</strong> convence mais do que qualquer texto.',
-    mapa_label: 'Portugal ↔ China · A ponte que falta ao mercado',
+    mapa_label: 'Portugal ↔︎ China · A ponte que falta ao mercado',
     mapa_s1_val:'10.000 km', mapa_s1_label:'de distância física',
     mapa_s2_val:'1 intérprete', mapa_s2_label:'nativo em ambas as línguas em PT',
     mapa_s3_val:'0 barreiras', mapa_s3_label:'com CHAPT como ponte',
-    nl_serv:'Serviços', nl_price:'Preços',
+    nl_sobre:'Sobre', nl_serv:'Serviços', nl_price:'Preços',
     nl_cult:'Cultura', nl_faq:'FAQ', nl_contact:'Contacto',
     form_ok_title:'Pedido recebido!',
     form_ok_sub:'Responderei em menos de 24 horas. Pode também contactar directamente via WhatsApp: +351 926 188 888',
@@ -2918,6 +3007,8 @@ const translations = {
     p3_name: '任务报告', p3_desc: '整理达成共识要点、使用术语及对后续中葡互动的建议。',
     p4_name: '后续跟进', p4_desc: '任务后提供答疑服务，持续支持中葡商务关系的维护与发展。',
     char_label: '信任 · Confiança',
+    manif_label: '第一人称',
+    manif_text: '我于2006年出生在葡萄牙，从小在两种语言之间长大——在家说<em>中文</em>，在外说<em>葡萄牙语</em>，并曾在水城（Vila do Conde）的一所中文学校就读。我从不需要在两个世界之间做选择：我属于两者。正是这种与生俱来的双语能力，让我在每一个中葡需要彼此理解的场合都能发挥作用。',
     sec_label:  '专业领域',
     sec_title:  '<em>专业</em>领域',
     sec1_name: '汽车工业',      sec1_sub: 'OEM、一级供应商、零部件、质量检验',
@@ -2996,11 +3087,11 @@ const translations = {
     video_label: '视频介绍', video_title: '听我用<em>两种语言</em>说话',
     video_placeholder: '视频介绍 · 即将推出',
     video_tip: '视频介绍是任何竞争对手都没有的元素。<strong>30秒用葡萄牙语和普通话介绍自己</strong>，比任何文字都更有说服力。',
-    mapa_label: '葡萄牙 ↔ 中国 · 市场缺失的桥梁',
+    mapa_label: '葡萄牙 ↔︎ 中国 · 市场缺失的桥梁',
     mapa_s1_val:'10,000 公里', mapa_s1_label:'地理距离',
     mapa_s2_val:'1位口译员', mapa_s2_label:'葡萄牙仅有的双语母语者',
     mapa_s3_val:'零障碍', mapa_s3_label:'以CHAPT为桥梁',
-    nl_serv:'服务', nl_price:'价格',
+    nl_sobre:'关于', nl_serv:'服务', nl_price:'价格',
     nl_cult:'文化', nl_faq:'常见问题', nl_contact:'联系',
     form_ok_title:'请求已收到！',
     form_ok_sub:'我将在24小时内回复。您也可以直接通过微信或WhatsApp联系：+351 926 188 888',
@@ -3055,7 +3146,7 @@ function setLang(lang) {
 
   document.documentElement.lang = lang === 'zh' ? 'zh' : 'pt';
 
-  // WhatsApp ↔ WeChat swap
+  // WhatsApp ↔︎ WeChat swap
   const wa = document.getElementById('floatWA');
   const wc = document.getElementById('floatWeChatWrap');
   if (lang === 'zh') {
@@ -3304,7 +3395,7 @@ initMagnetic();
   const counter  = document.getElementById('section-counter');
   const scCur    = document.getElementById('sc-current');
   const sectionIds = [
-    'hero','media','sobre','servicos','pricing',
+    'hero','media','sobre','manifesto','servicos','pricing',
     'numeros','processo','mapa','sectores','cultura',
     'faq','contacto'
   ];
@@ -3572,7 +3663,7 @@ setLang = function(lang) {
   }
 
   /* ───────── 4 · SECTION DEPTH ENTRANCE (fly in from the screen's depth) ───────── */
-  ['media','sobre','servicos','pricing','processo','sectores','cultura','faq','contacto']
+  ['media','sobre','manifesto','servicos','pricing','processo','sectores','cultura','faq','contacto']
   .forEach(function(id){
     var el = document.getElementById(id);
     if(!el) return;
@@ -3600,7 +3691,7 @@ setLang = function(lang) {
         scrollTrigger:{trigger:g.closest('section'),start:'top bottom',end:'bottom top',scrub:1.2}});
   });
 
-  /* ───────── 6 · PINNED BRIDGE (Portugal ↔ China) ───────── */
+  /* ───────── 6 · PINNED BRIDGE (Portugal ↔︎ China) ───────── */
   (function(){
     var mp = document.getElementById('mapPath');
     if(!mp || !mp.getTotalLength) return;
